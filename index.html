@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colombia 5.0 & Createx 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<script src="js/script.js"></script>
+<body>
+
+<div id="lightbox">
+  <button id="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button id="lightbox-prev" onclick="lbNav(-1)">&#8249;</button>
+  <img id="lightbox-img" src="" alt="" />
+  <div id="lightbox-caption"></div>
+  <button id="lightbox-next" onclick="lbNav(1)">&#8250;</button>
+</div>
+
+<nav>
+  <div class="nav-logo">Ferias 2026</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" data-page="home"       class="active">Inicio</a></li>
+    <li><a href="#" data-page="colombia">Colombia 5.0</a></li>
+    <li><a href="#" data-page="createx">Createx</a></li>
+    <li><a href="#" data-page="glossary">Glosario</a></li>
+    <li><a href="#" data-page="conclusion">Conclusion</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+
+<div id="home" class="page active">
+  <div class="container">
+    <h1>Colombia 5.0 &amp; Createx 2026</h1>
+    <p class="subtitle">Documentacion de ferias — Tecnologia e Innovacion &nbsp;·&nbsp; Moda y Diseno</p>
+
+    <div class="author-box">
+      <div class="author-item"><label>Presentado por</label><span>Aarón Daniel Quintana Serna</span></div>
+      <div class="author-item"><label>Presentado a</label><span>Instructor Belman Marín e Instructor Andrés Chavez</span></div>
+      <div class="author-item"><label>Programa</label><span>SENA — ADSO — Ficha 3288046</span></div>
+    </div>
+
+    <p>Bienvenido al sitio de documentacion de dos eventos realizados en Bogota durante el 2026. Selecciona por cual feria deseas comenzar.</p>
+
+    <h2>Selecciona una feria</h2>
+    <div class="feria-selector">
+      <button class="feria-btn" onclick="navigate('colombia')">
+        <div class="feria-tag">Conferencia 01 — Tecnologia</div>
+        <div class="feria-name">Colombia 5.0</div>
+        <div class="feria-desc">Feria de tecnologia, innovacion y transformacion digital. Inteligencia artificial, Game UI y el futuro del software.</div>
+      </button>
+      <button class="feria-btn blue-tag" onclick="navigate('createx')">
+        <div class="feria-tag" style="color:var(--blue);">Conferencia 02 — Moda</div>
+        <div class="feria-name">Createx 2026</div>
+        <div class="feria-desc">Feria de moda y diseno textil en Corferias. Tendencias, sostenibilidad y la relacion entre creatividad y tecnologia.</div>
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Objetivo del sitio</h2>
+    <div class="obj-grid">
+      <div class="obj-card"><h3>Documentar</h3><p>Registrar las conferencias y talleres para consulta academica futura.</p></div>
+      <div class="obj-card"><h3>Bilingue</h3><p>Presentar todo el contenido en espanol e ingles.</p></div>
+      <div class="obj-card"><h3>Glosario</h3><p>Construir un vocabulario tecnico con mas de 30 terminos.</p></div>
+      <div class="obj-card"><h3>Reflexion</h3><p>Analizar el impacto etico y social de la tecnologia y la moda.</p></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Ferias</div></div>
+      <div class="stat"><div class="stat-n">32</div><div class="stat-l">Terminos</div></div>
+      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Idiomas</div></div>
+      <div class="stat"><div class="stat-n">10</div><div class="stat-l">Fotos</div></div>
+    </div>
+  </div>
+</div>
+
+<div id="colombia" class="page">
+  <div class="container">
+    <h1>Colombia 5.0</h1>
+    <p class="subtitle">Feria de Tecnologia e Innovacion — Bogota 2026</p>
+
+
+    <div class="card">
+      <span class="badge">Conferencia 01 — Game UI + IA</span>
+      <h2 style="font-size:1.1rem; text-transform:none; letter-spacing:0; color:var(--white); margin-bottom:20px;">Sistemas de Game UI + IA</h2>
+      <div class="meta-row">
+        <div class="meta-item"><label>Conferencista</label><span>Andres Pisso</span></div>
+        <div class="meta-item"><label>Empresa</label><span>Invasion Games</span></div>
+        <div class="meta-item"><label>Tema principal</label><span>Diseno UX en videojuegos con IA</span></div>
+      </div>
+
+      <h3>Resumen / Summary</h3>
+      <div class="tabs">
+        <button class="tab-btn active" data-target="c1-es">Espanol</button>
+        <button class="tab-btn" data-target="c1-en">English</button>
+      </div>
+      <div id="c1-es" class="tab-content active">
+        <p>En la feria de tecnología pudimos ver los avances tecnologicos que han venido creciendo en la nación, el desarrollo del software, hardware, creacion de inteligencia artificial, analisis de UI/UX en diferentes programas, asistimos a la conferencia de Andrés Pisso, un diseñador de UI, nos enseño conceptos basicos de figma y como crear objetos dentro de este mismo para utilizar tanto en aplicaciones como en videojuegos</p>
+      </div>
+      <div id="c1-en" class="tab-content">
+        <p>At the technology fair, we got to see the technological advances that have been growing in the country, the development of software, hardware, creation of artificial intelligence, analysis of UI/UX in different programs. We attended the conference by Andrés Pisso, a UI designer, who taught us basic concepts of Figma and how to create objects within it to use both in apps and video games.</p>
+      </div>
+
+      <h3 style="margin-top:22px;">Palabras clave / Keywords</h3>
+      <div class="keywords">
+        <span class="kw">Game UI</span>
+        <span class="kw">Design System</span>
+        <span class="kw">Artificial Intelligence</span>
+        <span class="kw">HUD</span>
+        <span class="kw">UX Design</span>
+        <span class="kw">Consistency</span>
+        <span class="kw">Scalability</span>
+      </div>
+
+      <h3 style="margin-top:24px;">Galeria de fotos</h3>
+      <div class="img-grid" id="grid-colombia">
+        <div class="img-slot" data-group="colombia" data-index="0" data-desc="Presentación general de la pr esentación de Andres Pisso"><img src="imagenes/imagen0.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="nav-bottom">
+      <button class="btn-nav" onclick="navigate('home')">&#8592; Volver a inicio</button>
+      <button class="btn-nav blue" onclick="navigate('createx')">Continuar a Createx &#8594;</button>
+    </div>
+  </div>
+</div>
+
+<div id="createx" class="page">
+  <div class="container">
+    <h1>Createx 2026</h1>
+    <p class="subtitle">Feria de Moda y Diseno Textil — Corferias, Bogota</p>
+
+    <div class="card">
+      <span class="badge blue">Conferencia 02 — Moda</span>
+      <h2 style="font-size:1.1rem; text-transform:none; letter-spacing:0; color:var(--white); margin-bottom:20px;">Createx 2026 — Feria de Moda en Corferias</h2>
+      <div class="meta-row">
+        <div class="meta-item"><label>Evento</label><span>Createx 2026</span></div>
+        <div class="meta-item"><label>Lugar</label><span>Corferias, Bogota</span></div>
+        <div class="meta-item"><label>Tema principal</label><span>Moda, tendencias y negocio textil</span></div>
+      </div>
+
+      <h3>Resumen / Summary</h3>
+      <div class="tabs">
+        <button class="tab-btn active" data-target="c2-es">Espanol</button>
+        <button class="tab-btn" data-target="c2-en">English</button>
+      </div>
+      <div id="c2-es" class="tab-content active">
+        <p>En la feria de Createx pudimos observar el talento de las personas en el area de la confección, marroquinería, entre otras areas, las aprendices de nuestro centro (CMTC) dieron un grán esfuerzo y empeño en demostrar que tienen talento para crear prendas y modelarlas de forma profesional, tambien cabe mencionar a los directivos del Sena que permitieron la gestión del evento y la participación de nuestro centro en el, dando un impulso no solo al centro de manufactura en textil y cuero sino a todo el nombre del Sena como tal</p>
+      </div>
+      <div id="c2-en" class="tab-content">
+        <p>At the Createx fair, we were able to see the talent of people in the areas of clothing, leather goods, and other fields. The apprentices from our center (CMTC) put in a lot of effort and dedication to show that they have the talent to create garments and model them professionally. It's also worth mentioning the SENA directors who made the management of the event and our center's participation possible, giving a boost not just to the textile and leather manufacturing center but to the entire SENA name as well.</p>
+      </div>
+
+      <h3 style="margin-top:22px;">Palabras clave / Keywords</h3>
+      <div class="keywords">
+        <span class="kw">Moda Sostenible</span>
+        <span class="kw">Tendencias</span>
+        <span class="kw">Diseno Textil</span>
+        <span class="kw">Identidad de Marca</span>
+        <span class="kw">Economia Circular</span>
+        <span class="kw">Wearable Tech</span>
+      </div>
+
+      <h3 style="margin-top:24px;">Galeria de fotos</h3>
+      <div class="img-grid" id="grid-createx">
+          <div class="img-slot" data-group="createx" data-index="1" data-desc="Escenario de la pasarela"><img src="imagenes/imagen1.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="2" data-desc=""><img src="imagenes/imagen2.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="3" data-desc="Entrada a la pasarela"><img src="imagenes/imagen3.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="4" data-desc=""><img src="imagenes/imagen4.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="5" data-desc="Damas desfilando sus creaciones"><img src="imagenes/imagen5.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="6" data-desc=""><img src="imagenes/imagen6.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="7" data-desc=""><img src="imagenes/imagen7.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="8" data-desc="Pasarela combinada con musica en vivo"><img src="imagenes/imagen8.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="9" data-desc="diferentes stands de emprendedores de la moda"><img src="imagenes/imagen9.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="10" data-desc=""><img src="imagenes/imagen10.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="11" data-desc="stand de gabanes"><img src="imagenes/imagen11.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="12" data-desc="Yo probando un gabán"><img src="imagenes/imagen12.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="13" data-desc=""><img src="imagenes/imagen13.jpg" alt=""></div>
+        <div class="img-slot" data-group="createx" data-index="14" data-desc="stand de muebles"><img src="imagenes/imagen14.jpg" alt=""></div>
+      </div>
+
+      <h3 style="margin-top:24px;">Videos (2)</h3>
+      <div class="video-grid">
+        <div class="video-slot"><video src="https://drive.google.com/file/d/1sokGzgsFRuFkrTWoZwGvHqa2Q_YqjRor/preview"></video></div>
+        <div class="video-slot"><video src="https://drive.google.com/file/d/1B4KwXlMDspZ9EusCGHaxkuPi9BdVY2vY/preview"></video></div>
+      </div>
+    </div>
+
+    <div class="nav-bottom">
+      <button class="btn-nav" onclick="navigate('colombia')">&#8592; Volver a Colombia 5.0</button>
+      <button class="btn-nav blue" onclick="navigate('glossary')">Continuar al Glosario &#8594;</button>
+    </div>
+  </div>
+</div>
+
+
+<div id="glossary" class="page">
+  <div class="container">
+    <h1>Glosario Tecnico</h1>
+    <p class="subtitle">Terminos tecnicos aprendidos en Colombia 5.0 y Createx</p>
+
+    <div class="search-wrap">
+      <input type="text" id="glossSearch" placeholder="Buscar termino en espanol o ingles..." />
+    </div>
+    <p class="gloss-count" id="glossCount"></p>
+    <div class="card" style="padding:0; overflow:hidden;">
+      <table>
+        <thead><tr><th>English</th><th>Espanol</th><th>Definition / Definicion</th></tr></thead>
+        <tbody id="glossBody"></tbody>
+      </table>
+    </div>
+
+    <div class="nav-bottom">
+      <button class="btn-nav" onclick="navigate('createx')">&#8592; Volver a Createx</button>
+      <button class="btn-nav blue" onclick="navigate('conclusion')">Continuar a Conclusion &#8594;</button>
+    </div>
+  </div>
+</div>
+
+<div id="conclusion" class="page">
+  <div class="container">
+    <h1>Conclusion y Reflexion</h1>
+    <p class="subtitle">Reflexion etica y personal sobre las dos ferias</p>
+
+    <div class="card">
+      <h2>Reflexion — Colombia 5.0 (Tecnologia)</h2>
+      <p style="font-style:italic; color:var(--text-dim);">En resumen Colombia 5.0 fué bastante informativa ya que pudimos entender como funciona el crecimiento tecnologico hoy en dia y como nosotros como desarrolladores podemos aportar en este crecimiento y ser parte del futuro </p>
+    </div>
+
+    <div class="card">
+      <h2>Reflexion — Createx (Moda)</h2>
+      <p style="font-style:italic; color:var(--text-dim);">En lo personal pude ver que el mundo de la moda es muchisimo mas amplio del o que creía, el diseño de prendas de vestir, el modelaje, la combinación de colores en todas las cosas son simplemente maravillosas, es un area en la que se requiere pasión y creatividad para sacarlo adelante</p>
+    </div>
+
+    <h2>Pilares eticos — Tecnologia</h2>
+    <div class="ethics-grid">
+      <div class="eth-card"><div class="eth-title">Inteligencia Artificial</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Tenemos la IA como una herramienta, pero no puede reemplazarnos a nivel de creatividad o responsabilidad, sin embargo es de gran ayuda en muchos momentos</p></div>
+      <div class="eth-card"><div class="eth-title">Uso de Datos</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Es bueno tener en cuenta nuestro nivel de conciencia al momento de usar internet y entregar nuestros datos a terceros</p></div>
+      <div class="eth-card"><div class="eth-title">Automatizacion</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Es necesario aprender de automatización para hacer procesos mas eficientes y tener mayor espacio para diferentes trabajos o actividades/p></div>
+      <div class="eth-card"><div class="eth-title">Impacto Social</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Con respecto al uso de la tecnologia se ha visto el impacto positivo en la humanidad y se ve que aún falta mucho por descubrir, pero siempre siguiendo la etica y la moral al momento de emplearla</p></div>
+      <div class="eth-card"><div class="eth-title">Responsabilidad</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Como desarrolladores somos responsables de manejar la tecnologia, los datos, la IA etc.. de forma ética y responsable</p></div>
+    </div>
+
+    <div class="divider"></div>
+
+    <h2>Sostenibilidad y economia circular</h2>
+    <div class="ethics-grid">
+      <div class="eth-card"><div class="eth-title">Reduccion de residuos</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Es importante tener en cuenta la reducción de residuos innecesarios al momento de generar un producto</p></div>
+      <div class="eth-card"><div class="eth-title">Reutilizacion</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Tanto en tecnología como en moda se puede reutilizar el material empleado en algún producto, esto con el fin de evitar la contaminación excesiva e innecesaria</p></div>
+      <div class="eth-card"><div class="eth-title">Optimizacion</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Como se ha dicho anteriormente, el usar los productos de forma conciente y responsable no solo traerá mas eficiencia sino que la creacion de diferentes productos será mas optima</p></div>
+      <div class="eth-card"><div class="eth-title">Produccion sostenible</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Cuando somos desarrolladores tenemos acceso a un amplio mundo de materiales y/o recursos para llevar a cabo nuestro trabajo, sin embargo debemos concientizarnos de cuanto debemos usar y de no caer en un derroche compulsivo de materiales/p></div>
+      <div class="eth-card"><div class="eth-title">Impacto ambiental</div><p style="font-size:.85rem; color:var(--text-dim); font-style:italic;">Gracias a la tecnologia se han visto avances en el medio ambiente, reducción de contaminación, adquirir conocimiento sobre como debemos cuidar el medio ambiente, la tecnología ha dado paso a una era en la que muchas personas puedan aportar al cuidado del medio ambiente y promover buenos actos para cuidarlo</p></div>
+    </div>
+
+    <div class="card" style="margin-top:24px;">
+      <h2>Conclusion general</h2>
+      <p style="font-style:italic; color:var(--text-dim);">El exito se encuentra mas alla de las dolencias o de los altibajos de la vida, hay exito para aquellos que perseveran a pesar de todo</p>
+    </div>
+
+    <div class="nav-bottom">
+      <button class="btn-nav" onclick="navigate('glossary')">&#8592; Volver al Glosario</button>
+      <button class="btn-nav blue" onclick="navigate('home')">Volver a Inicio &#8592;</button>
+    </div>
+  </div>
+</div>
+
+<button id="btn-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8593;</button>
+
+<footer>
+  Colombia 5.0 &amp; Createx 2026 &nbsp;·&nbsp; hecho por: Aarón Daniel Quintana Serna &nbsp;·&nbsp; SENA &nbsp;·&nbsp; ADSO &nbsp;·&nbsp; Ficha 3288046
+</footer>
+</body>
+</html>
